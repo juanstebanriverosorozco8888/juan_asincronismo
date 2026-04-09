@@ -18,10 +18,10 @@ export class Perfil {
     this.usuario = null;
 
     this.perfilService.obtenerUsuario().subscribe({
-      next:(respuesta)=>{
+      next: (respuesta) => {
         this.usuario = respuesta;
         this.cargando = false;
-      },error:()=>{
+      }, error: () => {
         this.cargando = false
       },
     })

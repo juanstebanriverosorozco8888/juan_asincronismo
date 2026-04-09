@@ -1,1 +1,11 @@
-<p>perfil works!</p>
+<div class="contenedor">
+    <h2>Perfil de ususario</h2>
+    <button (click)="cargarPerfil()">Cargar Perfil</button>
+    @if (cargando) {
+    <p>Cargando Perfil...</p>
+    }
+    @if (usuario) {
+    <p><strong>Nombre: {{usuario.nombre}}</strong></p>
+    <p><strong>Email: {{usuario.correo}}</strong></p>
+    }
+</div>
